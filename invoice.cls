@@ -73,12 +73,14 @@
     }
 
     \newcommand{\subtotalNoStar}{
+        \hline
         {\bf Subtotal} & {\bf \total{subhours} hours} &  & {\bf \$\total{subcost}}
-        \setcounter{subcost}{0}\setcounter{subhours}{0}\\
+        \setcounter{subcost}{0}\setcounter{subhours}{0}\\*[1.5ex]
     }
     \newcommand{\subtotalStar}{
+        \hline
         {\bf Subtotal\hfill} & & & {\bf \$\total{subcost}}
-        \setcounter{subcost}{0}\\
+        \setcounter{subcost}{0}\\*[1.5ex]
     }
 
 
@@ -92,7 +94,6 @@
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{\extracolsep{\fill}\hspace{\tabcolsep}} l r r r }
-    \hline
     {\bf Description of Services} & \multicolumn{1}{c}{\bf Quantity} & \multicolumn{1}{c}{\bf Unit Price} & \multicolumn{1}{c}{\bf Amount} \\*
     \hline\hline
     \endhead
