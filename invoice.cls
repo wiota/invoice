@@ -74,20 +74,11 @@
 
     \newcommand{\subtotalNoStar}{
         {\bf Subtotal} & {\bf \total{subhours} hours} &  & {\bf \$\total{subcost}}
-        \setcounter{subcost}{0}
-        \setcounter{subhours}{0}
-        \\*[1.5ex]
+        \setcounter{subcost}{0}\setcounter{subhours}{0}\\
     }
     \newcommand{\subtotalStar}{
-        {\bf Subtotal} & & & {\bf \$\total{subcost}}
-        \setcounter{subcost}{0}
-        \\*[1.5ex]
-    }
-    \newcommand{\subtotal}{
-         \hline
-         \@ifstar
-         \subtotalStar%
-         \subtotalNoStar%
+        {\bf Subtotal\hfill} & & & {\bf \$\total{subcost}}
+        \setcounter{subcost}{0}\\
     }
 
 
