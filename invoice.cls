@@ -72,12 +72,12 @@
          \\
     }
 
-    \newcommand{\subtotalNoStar}{
+    \newcommand{\subtotalwithhours}{
         \hline
         {\bf Subtotal} & {\bf \total{subhours} hours} &  & {\bf \$\total{subcost}}
         \setcounter{subcost}{0}\setcounter{subhours}{0}\\*[1.5ex]
     }
-    \newcommand{\subtotalStar}{
+    \newcommand{\subtotalnohours}{
         \hline
         {\bf Subtotal\hfill} & & & {\bf \$\total{subcost}}
         \setcounter{subcost}{0}\\*[1.5ex]
